@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 /**
- *main - print alphabeth
- *Return: Always 0 (Success)
+ *main - print alphabet
+ *Return 0
  */
+int main(void) {
+  char alphabet;
+  alphabet = 'a';
 
-int main(void)
-{
-	char a = 'a';
-	while (a  <= 'z')
-	{
-		putchar(a);
-		a++;
-	}
-	putchar('\n');
-	return (0);
+
+  while(alphabet<='z')
+    {
+      putchar(alphabet);
+      alphabet++;
+    }
+
+  putchar(10);
+  return(0);
 }
