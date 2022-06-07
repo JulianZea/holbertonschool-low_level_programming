@@ -1,8 +1,12 @@
 #include <stdio.h>
 
 /**
- *main - print alphabet
- *Return 0
+ * main - Indicates if a random number is positive or negative
+ *
+ * Description: Generates a random number.
+ *   indicates if it's positive or negative
+ *
+ * Return: 0
  */
 int main(void) {
   char alphabet;
