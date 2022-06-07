@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Indicates if the last digit of a random number is positive or negative
+ * main -  Indicates if digit of a random number is positive or negative
  *
  * Description: Indicates if the last digit of a random number.
  * Is positive or negative
