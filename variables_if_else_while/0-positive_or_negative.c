@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*main - Indicates if a random number is positive or negative
- *Description: Creating a random number and if its positive or negative 
- *Return: Always 0 (Success)
-*/
+/**
+ * main - Indicates if a random number is positive or negative
+ *
+ * Description: Generates a random number.
+ *   indicates if it's positive or negative
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
