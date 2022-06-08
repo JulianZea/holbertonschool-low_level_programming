@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Prints all possible combinations of two two-digit numbers.
  *
@@ -10,22 +9,22 @@
 
 int main(void)
 {
-	int num1;
-	int num2;
-	int num3;
+	int n1;
+	int n2;
+	int n3;
 
-	for (num1 = 48; num1 < 58; n1++)
+	for (n1 = '0'; n1 < ':'; n1++)
 	{
-		for (num2 = 49; num2 < 58; num2++)
+		for (n2 = '1'; n2 < ':'; n2++)
 		{
-			for (num3 = 50; num3 < 58; num3++)
+			for (n3 = '2'; n3 < '0'; n3++)
 			{
-				if (num1 != num2 && num2 != num3 && num1 != num3 && num2 > num1 && num3 > num2)
+				if (n1 != n2 && n2 != n3 && n1 != n3 && n2 > n1 && n3 > n2)
 				{
-					putchar(num1);
-					putchar(num2);
-					putchar(num3);
-					if (!(num1 == 55 && num2 == 56 && num3 == 57))
+					putchar(n1);
+					putchar(n2);
+					putchar(n3);
+					if (!(n1 == '7' && n2 == '8' && n3 == '9'))
 					{
 						putchar(',');
 						putchar(' ');
