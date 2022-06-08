@@ -6,18 +6,19 @@
  * Description: Prints all single digit numbers of base 10 starting from 0
  * followed by a new line
  *
- * Return: Always return 0
+ * Return: 0 Always
  */
 
 int main(void)
 {
-int i;
+        int i = 48;
 
-	for (i = 0; i <= 9; i++)
-	{
-		printf("%d", i);
+        while (i <= 57)
+        {
+                putchar(i);
+                i++;
+        }
 
-
-	putchar(10);
-	return (0);
+        putchar('\n');
+        return (0);
 }
