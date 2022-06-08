@@ -1,11 +1,13 @@
 #include <stdio.h>
 /**
- *main - print lowercase alpha a-z but 'q' and 'e'
- *Return 0 (success) 
+ *main - Entry point
+ *Description : print lowercase alpha a-z but 'q' and 'e'
+ *Return: Always 0 (success)
  */
 int main(void)
 {
 	char alphabet = 'a';
+
 	while (alphabet <= 'z')
 	{
 		if ((alphabet != 'q') && (alphabet != 'e'))
