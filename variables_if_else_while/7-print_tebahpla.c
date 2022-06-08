@@ -1,11 +1,15 @@
 #include <stdio.h>
-/*
- *main - prints the lowercase alphabet in reverse
- *Description : prints the lowercase alphabet in reverse, followed by a new line.
+
+/**
+ * main - Prints the alphabet in lowercase also in backwards
  *
- * Return: Always return (0)
+ * Description: Prints the alphabet in lowercase also in backwards
+ * followed by a new line.
+ *
+ * Return: Always return 0
  */
-int main (void)
+
+int main(void)
 {
 	char alphabet = 'z';
 
@@ -15,6 +19,6 @@ int main (void)
 		alphabet--;
 	}
 
-	putchar('\n')
-	return (0)
+	putchar(10);
+	return (0);
 }
