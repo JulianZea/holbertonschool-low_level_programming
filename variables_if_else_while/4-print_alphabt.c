@@ -9,11 +9,9 @@ int main(void)
 	while (alphabet <= 'z')
 	{
 		if ((alphabet != 'q') && (alphabet != 'e'))
-		{
-			putchar(alphabet);
-		}
+		putchar(alphabet);
 		alphabet++;
 	}
-	putchar('\n');
-	return (0);
+	putchar(10);
+	return (10);
 }
