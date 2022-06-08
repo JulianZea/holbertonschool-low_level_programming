@@ -3,19 +3,23 @@
 /**
  * main - Prints all possible combinations of single-digit numbers.
  *
- * Description: Prints all possible combinations of single-digit numbers.
- *
+ * Description: Prints all possible combinations of single-digit numbers. *
  * Return: Always return (0)
  */
-for (d = '0'; d <= '9'; d++)
+int main(void)
 {
-	putchar(d);
-	if (d != '9')
-	{
-		putchar(',');
-		putchar(' ');
-	}
+	int d;
 
+	for (d = '0'; d <= '9'; d++)
+	{
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+	}
+	putchar('\n')
+	return (0);
 }
-putchar('\n')
-return (0);
