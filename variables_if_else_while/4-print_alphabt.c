@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - print lowercase alpha a-z but 'q' and 'e'
- *Return: Always 0 (Success)
+ *Return 0 
  */
 int main(void)
 {
@@ -9,9 +9,11 @@ int main(void)
 	while (alphabet <= 'z')
 	{
 		if ((alphabet != 'q') && (alphabet != 'e'))
-		putchar(alphabet);
+		{
+			putchar(alphabet);
+		}
 		alphabet++;
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
