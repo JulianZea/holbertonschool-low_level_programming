@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - Prints all possible combinations of single-digit numbers.
  *
@@ -21,12 +22,12 @@ int main(void)
 				putchar(num2);
 				if (!(num1 == 56 && num2 == 57))
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
