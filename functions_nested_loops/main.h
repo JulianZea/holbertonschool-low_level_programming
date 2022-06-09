@@ -13,4 +13,9 @@ int _putchar(char c);
  */
 
 void print_alphabet(void);
+
+/**
+ *print_alphabet - writes the character "void print_alphabet_x10(void);" to standaroutput
+ */
+void print_alphabet_x10(void);
 #endif
