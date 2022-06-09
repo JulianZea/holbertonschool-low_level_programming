@@ -7,4 +7,10 @@
  *Error: -1 is returned.
  */
 int _putchar(char c);
+
+/**
+ *print_alphabet - writes the character "print_alphabet" to standaroutput
+ */
+
+void print_alphabet(void);
 #endif
