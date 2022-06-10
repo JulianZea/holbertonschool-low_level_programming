@@ -64,6 +64,9 @@ int print_last_digit(int var1);
 /*task 8 */
 void jack_bauer(void);
 
+/*task 9 */
+void times_table(void);
+
 /*
  *task 10
  */
