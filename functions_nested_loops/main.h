@@ -52,4 +52,12 @@ int print_sign(int n);
  */
 
 int _abs(int var);
+
+/**
+ * print_last_digit - print the last digit of number
+ * @var1: Number where extract the last digit
+ * Return: the Last number
+ */
+
+int print_last_digit(int var1);
 #endif
