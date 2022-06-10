@@ -65,4 +65,10 @@ int print_last_digit(int var1);
  *task 10
  */
 int add(int num1, int num2);
+
+/*
+ *task 11
+ */
+
+void print_to_98(int n);
 #endif
