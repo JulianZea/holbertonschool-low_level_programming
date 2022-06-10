@@ -60,4 +60,9 @@ int _abs(int var);
  */
 
 int print_last_digit(int var1);
+
+/*
+ *task 10
+ */
+int add(int num1, int num2);
 #endif
