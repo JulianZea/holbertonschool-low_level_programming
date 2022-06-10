@@ -43,4 +43,13 @@ int _isalpha(int c);
  */
 
 int print_sign(int n);
+
+
+/**
+ *_abs - show absolute value of integer
+ *@var: integer to converter
+ *Return: absolute value
+ */
+
+int _abs(int var);
 #endif
