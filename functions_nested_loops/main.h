@@ -61,6 +61,9 @@ int _abs(int var);
 
 int print_last_digit(int var1);
 
+/*task 8 */
+void jack_bauer(void);
+
 /*
  *task 10
  */
@@ -77,3 +80,4 @@ void print_to_98(int n);
  */
 
 #endif
+
