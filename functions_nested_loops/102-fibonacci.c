@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	long int var1 = 1, var = 2, result = 0, counter = 0;
+	long int a = 1, b = 2, result = 0, counter = 0;
 
-	printf("%lu, %lu, ", var1, var2 );
+	printf("%lu, %lu, ", a, b);
 
 	while (counter < 48)
 	{
-		result = var1 + var2;
-		var1 = var2;
-		var2 = result;
+		result = a + b;
+		a = b;
+		b = result;
 		if (counter != 47)
 			printf("%lu, ", result);
 		else
