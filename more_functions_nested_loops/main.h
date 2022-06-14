@@ -7,3 +7,6 @@ int _isdigit(int c);
 
 /*task 2*/
 int mul(int a, int b);
+
+/*task 3*/
+void print_numbers(void);
