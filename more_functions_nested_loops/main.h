@@ -25,3 +25,6 @@ void print_diagonal(int n);
 
 /*task 8*/
 void print_square(int size);
+
+/*task 9*/
+no hay
