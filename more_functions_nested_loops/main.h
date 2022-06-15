@@ -27,3 +27,7 @@ void print_diagonal(int n);
 void print_square(int size);
 
 /*task 9 no hay*/
+
+/*task 10*/
+void print_triangle(int size);
+
