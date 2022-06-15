@@ -19,3 +19,6 @@ void more_numbers(void);
 
 /*task 6*/
 void print_line(int n);
+
+/*task 7*/
+void print_diagonal(int n);
