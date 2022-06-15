@@ -22,3 +22,6 @@ void print_line(int n);
 
 /*task 7*/
 void print_diagonal(int n);
+
+/*task 8*/
+void print_square(int size);
