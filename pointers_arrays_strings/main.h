@@ -18,3 +18,6 @@ void _puts(char *str);
  * Return: length of a string
  */
 void print_rev(char *s);
+
+/*task 5*/
+void rev_string(char *s);
