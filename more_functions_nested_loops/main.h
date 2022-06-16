@@ -31,3 +31,5 @@ void print_square(int size);
 /*task 10*/
 void print_triangle(int size);
 
+/*task 12*/
+void print_number(int n);
