@@ -11,3 +11,10 @@ int _strlen(char *s);
 
 /*task 3*/
 void _puts(char *str);
+
+/**
+ * _strlen - returns the length of a string.
+ * @s: string
+ * Return: length of a string
+ */
+void print_rev(char *s);
