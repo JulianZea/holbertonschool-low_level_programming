@@ -6,21 +6,21 @@
  */
 void print_number(int n)
 {
-	int num_nu = num;
-	int size = size;
-	int unid = uni;
-	int dig_position = posiDig;
+	int num;
+	int size;
+	int uni;
+	int posiDig;
 
 	size = 1;
-	uni = i % 10;
-	i = i / 10;
-	num = i;
+	uni = n % 10;
+	n = n / 10;
+	num = n;
 	/*if the number is negative*/
 	if (uni < 0)
 	{
 		uni = -uni;
 		num = -num;
-		i = -i;
+		n = -n;
 		_putchar('-');
 	}
 	/*if the number has 2 digit or more*/
@@ -33,15 +33,15 @@ void print_number(int n)
 			num = num / 10;
 			size = size * 10;
 		}
-		/*print digits except "unid" digit and reduce size*/
+		/*print digits except "uni" digit and reduce size*/
 		/**/
 		while (size > 0)
 		{
 			/*print the first digit*/
-			posiDig = i / size;
+			posiDig = n / size;
 			_putchar('0' + posiDig);
 			/*need erase the first digit and pass next digit to first*/
-			i = i - (posiDig * size);
+			n = n - (posiDig * size);
 			size = size / 10;
 		}
 	}
