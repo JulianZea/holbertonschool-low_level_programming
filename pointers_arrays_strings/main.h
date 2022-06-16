@@ -21,3 +21,6 @@ void print_rev(char *s);
 
 /*task 5*/
 void rev_string(char *s);
+
+/*task 6*/
+void puts2(char *str);
