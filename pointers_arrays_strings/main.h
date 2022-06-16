@@ -24,3 +24,6 @@ void rev_string(char *s);
 
 /*task 6*/
 void puts2(char *str);
+
+/*task 7*/
+void puts_half(char *str);
