@@ -38,3 +38,6 @@ char *_strcpy(char *dest, char *src);
 /*proyecto 3*/
 /*task 1*/
 char *_strcat(char *dest, char *src);
+
+/*task 2*/
+char *_strncat(char *dest, char *src, int n);
