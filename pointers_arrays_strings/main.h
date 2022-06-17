@@ -33,3 +33,8 @@ void print_array(int *a, int n);
 
 /*task 9*/
 char *_strcpy(char *dest, char *src);
+
+
+/*proyecto 3*/
+/*task 1*/
+char *_strcat(char *dest, char *src);
