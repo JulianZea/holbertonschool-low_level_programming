@@ -41,3 +41,6 @@ char *_strcat(char *dest, char *src);
 
 /*task 2*/
 char *_strncat(char *dest, char *src, int n);
+
+/*task 3*/
+char *_strncpy(char *dest, char *src, int n);
