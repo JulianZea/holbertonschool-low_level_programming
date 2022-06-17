@@ -30,3 +30,6 @@ void puts_half(char *str);
 
 /*task 8*/
 void print_array(int *a, int n);
+
+/*task 9*/
+char *_strcpy(char *dest, char *src);
