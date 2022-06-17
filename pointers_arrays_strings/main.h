@@ -36,11 +36,14 @@ char *_strcpy(char *dest, char *src);
 
 
 /*proyecto 3*/
-/*task 1*/
+/*task 0*/
 char *_strcat(char *dest, char *src);
 
-/*task 2*/
+/*task 1*/
 char *_strncat(char *dest, char *src, int n);
 
-/*task 3*/
+/*task 2*/
 char *_strncpy(char *dest, char *src, int n);
+
+/*task 3*/
+int _strcmp(char *s1, char *s2);
