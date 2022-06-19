@@ -12,23 +12,21 @@
  *
  * Return: Void
  */
-
-char *_strncpy(char *dest, char *src, int n)
+char _strncpy(chardest, char src, int n)
 {
-	int i, size_dest;
+    int x;
 
-	for (size_dest = 0; *(dest + size_dest) != '\0'; size_dest++)
-		;
+    x = 0;
 
-	for (i = 0; i < n && *(src + i) != '\0'; i++)
-	{
-		*(dest + i) = *(src + i);
-	}
-
-	for (; i < n && i < size_dest; i++)
-	{
-		*(dest + i) = '\0';
-	}
-
-	return (dest);
+    while(x < n && src[x] != '\0')
+    {
+        dest[x] = src[x];
+        x++;
+    }
+    while (x < n)
+    {
+        dest[x] = '\0';
+        x++;
+    }
+    return (dest);
 }
