@@ -1,28 +1,24 @@
 #include "main.h"
 
 /**
- * string_toupper - Changes all lower case letters of a string to uppercase.
- * @p: Pointer added.
+ * string_toupper - Changes all lower case letters of a
+ *                   string to uppercase.
  *
- * return: Pointer.
+ *@p: Pointer added.
+ *
+ * Return: Pointer.
  */
+char *string_toupper(char *p)
+{
+	int i;
 
-char *mytoupper(char *s) {
-    int i = 0;
-    while (s[i] != '\0') {
-        if (s[i] >= 'a' && s[i] <= 'z') {
-            s[i] = s[i] -32; /* es igual a 97='a', 65='A', -97 + 65*/
-        }
-        i++;
-    }
-    return s;
-}
+	for (i = 0; p[i] != '\0'; i++)
+	{
 
-int main(void) {
-    char s[32];
-    printf("Insert string:");
-    if (scanf("%31s", s) == 1) {
-        printf("%s\n", mytoupper(s));
-    }
-    return 0;
+		if (p[i] >= 'a' && p[i] <= 'z')
+		{
+			p[i] = p[i] - 32;
+		}
+	}
+	return (p);
 }
