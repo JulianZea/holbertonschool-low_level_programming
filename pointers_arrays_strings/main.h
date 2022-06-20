@@ -64,6 +64,8 @@ char *cap_string(char *); /* *n  */
 
 /*task 7*/
 char *leet(char *s);
+/*task 8*/
+char *rot13(char *);
 
 /*proyecto 4*/
 /*task 0*/
