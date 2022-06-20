@@ -34,6 +34,8 @@ void print_array(int *a, int n);
 /*task 9*/
 char *_strcpy(char *dest, char *src);
 
+/*task 10*/
+int _atoi(char *s);
 
 /*proyecto 3*/
 /*task 0*/
