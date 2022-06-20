@@ -64,8 +64,12 @@ char *cap_string(char *); /* *n  */
 
 /*task 7*/
 char *leet(char *s);
+
 /*task 8*/
 char *rot13(char *);
+
+/*task 9*/
+void print_number(int n);
 
 /*proyecto 4*/
 /*task 0*/
