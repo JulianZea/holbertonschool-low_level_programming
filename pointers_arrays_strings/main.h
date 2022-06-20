@@ -58,4 +58,4 @@ char *string_toupper(char *);
 char *cap_string(char *); /* *n  */
 
 /*task 7*/
-no hay
+char *leet(char *s);
