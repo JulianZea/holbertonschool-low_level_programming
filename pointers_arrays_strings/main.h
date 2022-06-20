@@ -73,6 +73,8 @@ void print_number(int n);
 
 /*task 10*/
 
+/*task 11*/
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
 /*proyecto 4*/
 /*task 0*/
