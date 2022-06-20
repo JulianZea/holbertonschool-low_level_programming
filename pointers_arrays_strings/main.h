@@ -37,6 +37,9 @@ char *_strcpy(char *dest, char *src);
 /*task 10*/
 int _atoi(char *s);
 
+/*task 11*/
+
+
 /*proyecto 3*/
 /*task 0*/
 char *_strcat(char *dest, char *src);
