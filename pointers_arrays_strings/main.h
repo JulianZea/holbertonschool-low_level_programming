@@ -71,6 +71,9 @@ char *rot13(char *);
 /*task 9*/
 void print_number(int n);
 
+/*task 10*/
+
+
 /*proyecto 4*/
 /*task 0*/
 char *_memset(char *s, char b, unsigned int n);
