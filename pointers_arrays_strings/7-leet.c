@@ -1,29 +1,28 @@
 #include "main.h"
 
 /**
- * leet - Capitalize the string.
- *
- * @s: Pointer to string
- *
- * Return: The string with leet
+ * leet - Entry point
+ * ONE if, TWO loops only...
+ * @n: input
+ * Return: Always 0 (Success)
  */
-
-char *leet(char *s)
+char *leet(char *n)
 {
-	int cadena1[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	int cadena2[10] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
-	int com1;
-	int com2;
+	int i, j;
+	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int replacer[] = {'4', '3', '0', '7', '1'};
 
-	for (com1 = 0; s[com1]; com1++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (com2 = 0; com2 < 10; com2++)
+		for (j = 0; j <= 9; j++)
 		{
-			if (s[com1] == cadena1[com2])
+			if (n[i] == find[j])
 			{
-				s[com1] = cadena2[com2];
+				n[i] = replacer[j / 2];
+				j = 9;
 			}
 		}
 	}
-	return (s);
+
+	return (n);
 }
