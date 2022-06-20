@@ -63,3 +63,13 @@ char *leet(char *s);
 /*proyecto 4*/
 /*task 0*/
 char *_memset(char *s, char b, unsigned int n);
+
+/*task 1*/
+char *_memcpy(char *dest, char *src, unsigned int n);
+/*task 2*/
+
+/*task 3*/
+
+/*task 4*/
+
+/*task 5*/
