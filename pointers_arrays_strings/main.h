@@ -59,3 +59,7 @@ char *cap_string(char *); /* *n  */
 
 /*task 7*/
 char *leet(char *s);
+
+/*proyecto 4*/
+/*task 0*/
+char *_memset(char *s, char b, unsigned int n);
