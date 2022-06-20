@@ -1,29 +1,29 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * puts_half - Print in reverse a string
- * Description: Show thr last part of the string
- * @str: The char
+ * leet - Capitalize the string.
+ *
+ * @s: Pointer to string
+ *
+ * Return: The string with leet
  */
-void puts_half(char *str)
+
+char *leet(char *s)
 {
-	int i, len;
+	int cadena1[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	int cadena2[10] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	int com1;
+	int com2;
 
-	len = strlen(str);
-
-	if (len % 2 == 0)
+	for (com1 = 0; s[com1]; com1++)
 	{
-		for (i = len / 2; i < len; i++)
+		for (com2 = 0; com2 < 10; com2++)
 		{
-			_putchar(str[i]);
+			if (s[com1] == cadena1[com2])
+			{
+				s[com1] = cadena2[com2];
+			}
 		}
 	}
-	else
-	{
-		for (i = (len / 2) + 1; i < len; i++)
-		{
-			_putchar(str[i]);
-		}
-	}
-	_putchar('\n');
+	return (s);
 }
