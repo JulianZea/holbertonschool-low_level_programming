@@ -1,28 +1,29 @@
 #include "main.h"
-
+#include <string.h>
 /**
- * leet - Entry point
- * ONE if, TWO loops only...
- * @n: input
- * Return: Always 0 (Success)
+ * puts_half - Print in reverse a string
+ * Description: Show thr last part of the string
+ * @str: The char
  */
-char *leet(char *n)
+void puts_half(char *str)
 {
-	int i, j;
-	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	int replacer[] = {'4', '3', '0', '7', '1'};
+	int i, len;
 
-	for (i = 0; n[i] != '\0'; i++)
+	len = strlen(str);
+
+	if (len % 2 == 0)
 	{
-		for (j = 0; j <= 9; j++)
+		for (i = len / 2; i < len; i++)
 		{
-			if (n[i] == find[j])
-			{
-				n[i] = replacer[j / 2];
-				j = 9;
-			}
+			_putchar(str[i]);
 		}
 	}
-
-	return (n);
+	else
+	{
+		for (i = (len / 2) + 1; i < len; i++)
+		{
+			_putchar(str[i]);
+		}
+	}
+	_putchar('\n');
 }
