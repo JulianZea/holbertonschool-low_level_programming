@@ -8,3 +8,6 @@ void _puts_recursion(char *s);
 
 /*task 1*/
 void _print_rev_recursion(char *s);
+
+/*task 2*/
+int _strlen_recursion(char *s);
