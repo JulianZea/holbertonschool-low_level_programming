@@ -12,7 +12,7 @@ int ultron(int i, int num)
 	else if (i == num - 1)
 		return (1);
 	else if (num > i)
-		return (checker(i + 1, num));
+		return (ultron(i + 1, num));
 	return (1);
 }
 /**
