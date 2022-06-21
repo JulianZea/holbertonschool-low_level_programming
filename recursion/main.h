@@ -1,4 +1,8 @@
 /*proyecto 1 sem 7*/
+
+/*task _putchar*/
+int _putchar(char c);
+
 /*task 0*/
 void _puts_recursion(char *s);
 
