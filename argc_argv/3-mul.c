@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	z = ultron(argv[1]);
-	c = ultron(argv[2]);
+	z = atoi(argv[1]);
+	c = atoi(argv[2]);
 	result = z * c;
 	printf("%d\n", result);
 	return (0);
