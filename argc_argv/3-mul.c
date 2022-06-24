@@ -8,9 +8,7 @@
  **/
 int main(int argc, char *argv[])
 {
-	int z;
-	int c; 
-	int result;
+	int z, int c, int result;
 
 	if (argc < 3)
 	{
