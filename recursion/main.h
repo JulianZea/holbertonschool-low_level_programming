@@ -23,3 +23,6 @@ int _sqrt_recursion(int n);
 
 /*task 6*/
 int is_prime_number(int n);
+
+/*task 7*/
+int is_palindrome(char *s);
