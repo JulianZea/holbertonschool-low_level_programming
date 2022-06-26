@@ -27,7 +27,7 @@ char *create_array(unsigned int size, char c)
 	}
 	for (u = 0; u < size; u++)
 	{
-		jarvis[u] = u;
+		jarvis[u] = c;
 	}
 	return (jarvis);
 }
