@@ -7,8 +7,7 @@
  *
  * @max: max number to add in the array
  *
- * range: array rank
- * 
+ * range: array rank 
  * Return: The pointer to the newly created array
  */
 
