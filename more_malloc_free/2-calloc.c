@@ -7,26 +7,27 @@
  *
  * @size: size of an element
  *
- * Return: hola
+ * Return: hello
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unigned int z, size_finish = nmemb * size;
-	char *array_finish = NULL;
+	unsigned int z, final_size = nmemb * size;
+	char *final_array = NULL;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	array_finish = malloc(size_finish);
-	
-	if (!array_finish)
+	final_array = malloc(final_size);
+
+	if (!final_array)
 	{
-		free(array_finish);
+		free(final_array);
 		return (NULL);
 	}
 
-	for (z = 0; z < size_finish; z++)
-		array_finish[i] = 0;
+	for (z = 0; z < final_size; z++)
+		final_array[z] = 0;
 
-	return (array finish);
+	return (final_array);
 }
