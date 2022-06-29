@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = size_of_s2;
 
 	if (holder >= 0)
-		size_of_final_string = size_of_s1 + n + 5;
+		size_of_final_string = size_of_s1 + n + 1;
 	else
 		size_of_final_string = size_of_s1 + 1;
 
