@@ -7,14 +7,13 @@
  *
  * @max: max number to add in the array
  *
- * range: array rank 
  * Return: The pointer to the newly created array
  */
 
 int *array_range(int min, int max)
 {
 	int *new_array = NULL;
-	int range, z, c = 0;
+	int range, i, j = 0;
 
 	if (min > max)
 		return (NULL);
@@ -28,10 +27,10 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	for (z = min; z <= max; z++)
+	for (i = min; i <= max; i++)
 	{
-		new_array[c] = z;
-		c++;
+		new_array[j] = i;
+		j++;
 	}
 
 	return (new_array);
