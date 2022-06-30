@@ -1,0 +1,1 @@
+proyect C - Structures, typedef
