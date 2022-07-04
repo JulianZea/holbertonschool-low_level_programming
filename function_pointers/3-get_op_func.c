@@ -1,11 +1,10 @@
+#include <stdlib.h>
 #include "3-calc.h"
 
 /**
- * get_op_func - Validate and get the operation to use.
- *
- * @s: The operator (+, -, *, /, %)
- *
- * Return: The result of the operation, and null otherwise.
+ * get_op_func - function to select correct operation function
+ * @s: operation given (+, *, -, /, %)
+ * Return: pointer to correct operation function (0-4)
  */
 
 int (*get_op_func(char *s))(int a, int b)
@@ -18,15 +17,13 @@ int (*get_op_func(char *s))(int a, int b)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
-	while (ops[i].op)
+	while (ops[i].op != NULL)
 	{
-		if (strcmp(ops[i].op, s) == 0)
+		if (*s == *ops[i].op)
 			return (ops[i].f);
 		i++;
 	}
-
-	printf("Error\n");
-	exit(99);
+	return (NULL);
 }
