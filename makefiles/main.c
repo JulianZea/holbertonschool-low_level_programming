@@ -5,6 +5,7 @@
  *
  * Return: Always 
  */
+
 int main(void)
 {
 	print_school();
