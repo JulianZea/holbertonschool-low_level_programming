@@ -20,7 +20,10 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/*prototype C - More singly linked lists*/
 int _putchar(char c);
+/*task 1*/
 size_t print_listint(const listint_t *h);
-
+/*task 2*/
+size_t listint_len(const listint_t *h);
 #endif /*list*/
