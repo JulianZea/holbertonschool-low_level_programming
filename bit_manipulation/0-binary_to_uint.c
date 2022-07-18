@@ -8,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 
-	int len = 0, z;
+	int len = 0, c;
 	unsigned int sum = 0;
 
 	if (b == NULL)
@@ -21,15 +21,15 @@ unsigned int binary_to_uint(const char *b)
 
 	/* iterate string and if '1' then multiply by power of 2 */
 	/* get power of 2 via binary (e.g. 1<<2 = 100 in binary = 4) */
-	z = 0;
-	while (b[z])
+	c = 0;
+	while (b[c])
 	{
-		if ((b[z] != '0') && (b[z] != '1'))
+		if ((b[c] != '0') && (b[c] != '1'))
 			return (sum);
 
-		if (b[z] == '1')
+		if (b[c] == '1')
 			sum += (1 * (1 << len));
-		z++;
+		c++;
 		len--;
 	}
 
