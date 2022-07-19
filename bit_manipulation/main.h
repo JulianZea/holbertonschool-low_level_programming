@@ -17,5 +17,7 @@ int get_bit(unsigned long int n, unsigned int index);
 /*task 4*/
 /*task 5*/
 /*task 6*/
+/*task 7*/
+/*task 8*/
 
 #endif
