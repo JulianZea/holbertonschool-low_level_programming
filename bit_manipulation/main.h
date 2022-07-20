@@ -18,6 +18,7 @@ int set_bit(unsigned long int *n, unsigned int index);
 /*task 4*/
 int clear_bit(unsigned long int *n, unsigned int index);
 /*task 5*/
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
 /*task 6*/
 /*task 7*/
 /*task 8*/
