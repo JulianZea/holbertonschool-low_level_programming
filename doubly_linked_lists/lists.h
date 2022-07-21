@@ -25,7 +25,7 @@ typedef struct dlistint_s
 /* task 0 */
 size_t print_dlistint(const dlistint_t *h);
 /* task 1 */
-
+size_t dlistint_len(const dlistint_t *h);
 /* task 2 */
 
 /* task 3 */
