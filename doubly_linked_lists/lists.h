@@ -29,7 +29,7 @@ size_t dlistint_len(const dlistint_t *h);
 /* task 2 */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 /* task 3 */
-
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 /* task 4 */
 
 /* task 5 */
