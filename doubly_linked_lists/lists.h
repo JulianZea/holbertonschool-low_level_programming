@@ -31,7 +31,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 /* task 3 */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 /* task 4 */
-
+void free_dlistint(dlistint_t *head);
 /* task 5 */
 
 
