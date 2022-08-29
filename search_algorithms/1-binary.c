@@ -1,55 +1,61 @@
 #include "search_algos.h"
 
 /**
- * print_array - prints an array of integers
- * @array: array to print
- * @size: size of array
+ * recursive_search - searches for a value in an array of
+ * integers using the Binary search algorithm
  *
- * return: void
+ *
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
-void print_array(int *array, size_t size)
+int recursive_search(int *array, size_t size, int value)
 {
+	size_t half = size / 2;
 	size_t i;
 
-	printf("Searching in array:");
+	if (array == NULL || size == 0)
+		return (-1);
+
+	printf("Searching in array");
+
 	for (i = 0; i < size; i++)
-	{
-		printf(" %d", array[i]);
-		if (i != size - 1)
-			printf(",");
-	}
+		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+
 	printf("\n");
+
+	if (half && size % 2 == 0)
+		half--;
+
+	if (value == array[half])
+		return ((int)half);
+
+	if (value < array[half])
+		return (recursive_search(array, half, value));
+
+	half++;
+
+	return (recursive_search(array + half, size - half, value) + half);
 }
 
 /**
- * binary_search - searches for a value in a sorted array of integers using the
- * Binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: value to search for
+ * binary_search - calls to binary_search to return
+ * the index of the number
  *
- * Return: index where value is located, or -1 on failure
+ * @array: input array
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t l, m, r;
+	int index;
 
-	if (array != NULL && size > 0)
-	{
-		l = 0;
-		r = size - 1;
-		print_array(array + l, r + 1 - l);
-		while (l < r)
-		{
-			m = (l + r) / 2;
-			if (array[m] < value)
-				l = m + 1;
-			else if (array[m] > value)
-				r = m;
-			else
-				return (m);
-			print_array(array + l, r + 1 - l);
-		}
-	}
-	return (-1);
+	index = recursive_search(array, size, value);
+
+	if (index >= 0 && array[index] != value)
+		return (-1);
+
+	return (index);
 }
