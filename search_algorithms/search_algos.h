@@ -40,6 +40,10 @@ typedef struct skiplist_s
 	struct skiplist_s *express;
 } skiplist_t;
 
+/*task 0*/
 int linear_search(int *array, size_t size, int value);
+
+/*task 1*/
+int binary_search(int *array, size_t size, int value);
 
 #endif
